@@ -1,0 +1,150 @@
+/*=============== HOME ===============*/
+.home{
+   position: relative;
+
+   &__container{
+      padding-top: 8rem;
+      height: 100vh;
+      // height: 745px; // Uncomment, if you want this measure 
+   }
+   &__content{
+      position: relative;
+      z-index: 2;
+   }
+   &__data{
+      display: grid;
+      row-gap: .5rem;
+   }
+   &__subtitle{
+      font-size: var(--small-font-size);
+      color: var(--first-color);
+      letter-spacing: 3px;
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      font-family: var(--second-font);
+      color: var(--title-color);
+   }
+   &__description{
+      margin-bottom: 2.5rem;
+   }
+   &__button{
+      width: 180px;
+      height: 60px;
+      border: 0;
+      position: relative;
+      min-width: 180px;
+      min-height: 60px;
+      border-radius: 60px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+   
+      .text,
+      .icon-container {
+         position: relative;
+         z-index: 2;
+      }
+   
+      .icon-container {
+         --icon-size: 25px;
+         position: relative;
+         width: var(--icon-size);
+         height: var(--icon-size);
+         margin-left: 15px;
+         transition: transform 500ms ease;
+   
+         .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: var(--icon-size);
+            height: var(--icon-size);
+            transition: transform 500ms ease, opacity 250ms ease;
+   
+            &--left {
+               transform: translateX(-200%);
+               opacity: 0;
+            }
+   
+            svg {
+               width: 100%;
+               height: 100%;
+               fill: #fff;
+            }
+         }
+      }
+   
+      &::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background: var(--btn-bg);
+         border-radius: var(--height);
+         z-index: 1;
+         transition: transform 500ms ease;
+      }
+   
+      &:hover {
+         &::after {
+            transform: translateX(65%);
+         }
+   
+         .icon-container {
+            transform: translateX(125%);
+   
+            .icon {
+               &--left {
+                  transform: translateX(0);
+                  opacity: 1;
+               }
+   
+               &--right {
+                  transform: translateX(200%);
+                  opacity: 0;
+               }
+            }
+         }
+      }
+      /*display: inline-block;
+      background: var(--gradient-color);
+      color: var(--white-color);
+      width: max-content;
+      padding: 1rem 2rem;
+      border-radius: .75rem;
+      box-shadow: 0 24px 32px hsla(210, 54%, 24%, .3);*/
+   }
+   &__bird-1,
+   &__bird-2{
+      position: absolute;
+      width: 60px;
+   }
+   &__bird-1{
+      bottom: -6rem;
+      rotate: (-30deg);
+   }
+   &__bird-2{
+      top: 4.5rem;
+      right: 0;
+      rotate: (-15deg);
+   }
+   &__images{
+      z-index: 1;
+
+      & img{
+         position: absolute;
+         max-width: initial;
+         width: 600px;
+         left: -7rem;
+         bottom: 0;
+      }
+   }
+}

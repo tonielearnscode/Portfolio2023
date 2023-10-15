@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <title>Tonie's Portfolio</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="./index.html" class="nav__logo">
+                <img src="assets/img/favicon.png" alt="logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href='./projects.html' class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href='./projects.html' class="nav__link">Contact</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <!--<a href="#contact" class="nav__link">Contact</a>-->
+                    </li>
+                </ul>
+
+                <div class="nav__buttons">
+                    <!--<a href="#contact" class="nav__button-link">Contact</a>-->
+                    <a href="#resume" class="nav__button-ghost">Resume</a>
+                </div>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h3 class="home__subtitle">
+                            UX/UI Designer
+                        </h3>
+
+                        <h1 class="home__title">
+                            Tonie Breheny
+                        </h1>
+
+                        <p class="home__description">
+                            I design interfaces that marry aesthetics with functionality.
+                        </p>
+
+                        <a href="#about" class="home__button">
+                            About Me
+                        </a>
+                    </div>
+
+                    <img src="assets/img/bird-1.svg" alt="home image" class="home__bird-1">
+                    <img src="assets/img/bird-2.svg" alt="home image" class="home__bird-2">
+                </div>
+
+                <div class="home__images">
+                    <img src="assets/img/img-4.svg" alt="home image" class="home__img-4">
+                    <img src="assets/img/img-3.svg" alt="home image" class="home__img-3">
+                    <img src="assets/img/img-2.svg" alt="home image" class="home__img-2">
+                    <img src="assets/img/img-1.svg"  alt="home image" class="home__img-1">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== ABOUT ====================-->
+    <section class="sub-section" id="about">
+        <div class="about-information">
+            <h2 class="h2-alternative">A storyteller that empathizes with users to create solutions, and delivering successful products. </h2>
+            <p class="p-alternative">Hi, there! My name is Tonie and I'm a UX/UI designer who enjoys tackling complex challenges, cares deeply for craftmanship in visuals across multiple platforms, and drives product execution through an iterative and collaborative process</p>    
+        </div>
+        <div class="headshot-container">
+            <img class="headshot" src="assets/img/aboutImg-bg.svg" />
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div id="contact-container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>&bull; Connect with Me! &bull;</h4>
+                    <div class="underline"></div>
+                    <p class="p-footer">Feel free to reach out for any projects you have in mind or just feel like chatting!</p>
+                    <form action="#" method="post" id="contact_form">
+                        <div class="name">
+                            <label for="name_input"></label>
+                            <input type="text" placeholder="My name is" name="name" id="name_input" required autocomplete="name">
+                        </div>
+                        <div class="email">
+                            <label for="email_input"></label>
+                            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required autocomplete="email">
+                        </div>
+                        <div class="telephone">
+                            <label for="telephone_input"></label>
+                            <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+                        </div>
+                        <div class="subject">
+                            <label for="subject_input"></label>
+                            <select placeholder="Subject line" name="subject" id="subject_input" required>
+                                <option disabled hidden selected>SUBJECT LINE</option>
+                                <option>I'd like to start a project</option>
+                                <option>I'd like to ask a question</option>
+                                <option>I'd like to make a proposal</option>
+                            </select>
+                        </div>
+                        <div class="message">
+                            <label for="message_input"></label>
+                            <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5"
+                                required></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Send Message" id="form_button" />
+                        </div>
+                    </form><!-- // End form -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer__columns">
+                <div class="footer__col">
+                    <h3 class="footer__col-title">
+                        <img src="assets/img/Tonie__white-logo.svg" alt="footer logo" class="footer__logo">
+                        </i> <span></span>
+                    </h3>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    About
+                                </a>
+                            </li>
+
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    Projects
+                                </a>
+                            </li>
+
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    Contact
+                                </a>
+                            </li>
+
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">
+                        <i data-feather="share-2"></i> <span>Socials</span>
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    <i data-feather="youtube"></i><span>Github</span>
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    <i data-feather="facebook"></i><span>LinkedIn</span>
+
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="" class="footer__nav-link">
+                                    <i data-feather="instagram"></i><span>Instagram</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__col-title">
+                        <i data-feather="send"></i> <span>FAQ</span>
+                    </h3>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="mailto:abreheny96@gmail.com" class="footer__nav-link">
+                                    What are your hobbies? : <br>
+                                    Climbing, yoga, & tennis!
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--=============== GSAP ===============-->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
